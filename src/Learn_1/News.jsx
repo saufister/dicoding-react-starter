@@ -34,22 +34,21 @@ function News() {
     return (
       <div>
         <Header title="Latest News " subtitle="Covering March & April 2022" />
-        <Card 
-        title={someNews[0].title}
-        date={someNews[0].date}
-        content={someNews[0].content}
-        image={someNews[0].image}
-        category={someNews[0].category}
-        link={someNews[0].link}
-      />
-              <Card 
-        title={someNews[1].title}
-        date={someNews[1].date}
-        content={someNews[1].content}
-        image={someNews[1].image}
-        category={someNews[0].category}
-        link={someNews[0].link}
-      />
+        <div className="container">
+          <div className="row">
+            {someNews.map((news, index) => (
+              <Card
+                key={index}
+                title={news.title}
+                date={news.date}
+                content={news.content}
+                image={news.image}
+                category={news.category}
+                link={news.link}
+              />
+            ))}
+          </div>
+      </div>
       </div>
     );
   }
