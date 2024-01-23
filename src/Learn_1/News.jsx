@@ -39,12 +39,7 @@ function News() {
             {someNews.map((news, index) => (
               <Card
                 key={index}
-                title={news.title}
-                date={news.date}
-                content={news.content}
-                image={news.image}
-                category={news.category}
-                link={news.link}
+                {...news}
               />
             ))}
           </div>
