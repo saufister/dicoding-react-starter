@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import News from './Learn_1/News.jsx'
 import Counter from './Learn_1/component/Counter.jsx'
+import CounterApp from './Learn_2/CounterApp.jsx'
 import './index.css'
 
 class KomponenKu extends React.Component {
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <News /> */}
     {/* <KomponenKu name ="Saufi"/> */}
-    <Counter/>
+    {/* <Counter/> */}
+    <CounterApp/>
   </React.StrictMode>,
 )
