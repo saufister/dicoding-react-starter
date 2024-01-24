@@ -1,10 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import News from './Learn_1/News.jsx'
+import Counter from './Learn_1/component/Counter.jsx'
 import './index.css'
 
+class KomponenKu extends React.Component {
+   
+  render() {
+    let i = 0 ;
+    console.log(this.props);
+    
+    console.log("render ke" + i);
+    i++;
+    return <h1>Hello, {this.props.name}</h1>
+  }
+}
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <News />
+    {/* <News /> */}
+    {/* <KomponenKu name ="Saufi"/> */}
+    <Counter/>
   </React.StrictMode>,
 )
