@@ -4,7 +4,7 @@ class ControlledComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            email : ''
+            email : 'ikan'
         }
         this.onEmailChangeHandler = this.onEmailChangeHandler.bind(this);
     }
