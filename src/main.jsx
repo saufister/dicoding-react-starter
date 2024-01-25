@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import News from './Learn_1/News.jsx'
 import Counter from './Learn_1/component/Counter.jsx'
 import CounterApp from './Learn_2/CounterApp.jsx'
+import ControlledComponent  from './Learn_3/ControlledComponent.jsx'
 import './index.css'
 
 class KomponenKu extends React.Component {
@@ -21,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <News /> */}
     {/* <KomponenKu name ="Saufi"/> */}
     {/* <Counter/> */}
-    <CounterApp/>
+    <ControlledComponent/>
   </React.StrictMode>,
 )
